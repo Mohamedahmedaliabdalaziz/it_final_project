@@ -31,10 +31,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (savedTheme === "dark") {
             themeLink.href = "contact2.css";
-            icon.src = "images/moon-fill.svg";
+            icon.src = "moon-fill.svg";
         } else {
             themeLink.href = "contact.css";
-            icon.src = "images/brightness-high-fill.svg";
+            icon.src = "brightness-high-fill.svg";
         }
 
         themeToggle.addEventListener("click", () => {
@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (currentPath === "contact.css") {
                 themeLink.href = "contact2.css";
-                icon.src = "images/moon-fill.svg";
+                icon.src = "moon-fill.svg";
                 localStorage.setItem("theme", "dark");
             } else {
                 themeLink.href = "contact.css";
-                icon.src = "images/brightness-high-fill.svg";
+                icon.src = "brightness-high-fill.svg";
                 localStorage.setItem("theme", "light");
             }
         });
