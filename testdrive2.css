@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #000000;
+    color: #ffffff;
+}
+
+.logo {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgb(0, 0, 0);
+    border-radius: 12px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.sidebar.active {
+    width: 220px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #646464;
+}
+
+.theme-btn {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.form {
+    width: 420px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+select,
+textarea {
+    padding: 12px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+}
+
+.msg {
+    display: none;
+    text-align: center;
+    color: green;
+}

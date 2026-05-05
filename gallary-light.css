@@ -1,0 +1,619 @@
+body {
+    background-color: #f0f0f0;
+    color: #111;
+}
+
+
+/* Navbar & buttons */
+
+.menu-btn {
+    background: rgba(0, 0, 0, 0.15);
+    color: #111;
+}
+
+.site-title {
+    color: #111;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    color: white;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.login-page {
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    width: 70px;
+    height: 70px;
+    color: white;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.img-login {
+    width: 65px;
+}
+
+.img-theme {
+    width: 55px;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.sidebar a {
+    background-color: #1a1a8c;
+    color: white;
+}
+
+.sidebar a:hover {
+    background: rgba(0, 0, 0, 0.08);
+    color: #111;
+}
+
+
+/* Gallery paragraph */
+
+#gallery-paragraph {
+    color: #111;
+}
+
+
+/* Brand buttons */
+
+.brand-btn {
+    background: white;
+    color: #111;
+    border: 1px solid #111;
+}
+
+.brand-btn.active,
+.brand-btn:hover {
+    background: #111;
+    color: white;
+}
+
+
+/* Car cards */
+
+.car-card {
+    background: white;
+    border: 1px solid #ddd;
+    color: #111;
+}
+
+.car-card h3 {
+    color: #111;
+}
+
+.car-card p {
+    color: #555;
+}
+
+
+/* Details page */
+
+.detail-wrapper {
+    color: #111;
+}
+
+.detail-name {
+    color: #111;
+}
+
+.detail-price {
+    color: #111;
+}
+
+.back-btn {
+    background: #111;
+    color: white;
+}
+
+.back-btn:hover {
+    background: #333;
+}
+
+
+/* Specs table */
+
+.specs-table thead th {
+    background: #111;
+    color: white;
+}
+
+.specs-table tbody td {
+    color: #111;
+    border-bottom: 1px solid #ddd;
+}
+
+.specs-table tbody td:first-child {
+    color: #333;
+    font-weight: bold;
+}
+
+.specs-table tbody tr:hover td {
+    background: #f5f5f5;
+}
+
+.specs-table tfoot td {
+    background: #e8e8e8;
+    color: #555;
+}
+
+.spec-badge {
+    background: #e8e8e8;
+    color: #111;
+}
+
+
+/* Pagination */
+
+.page-btn {
+    background: white;
+    color: #111;
+    border: 1px solid #aaa;
+}
+
+.page-btn.active,
+.page-btn:hover {
+    background: #111;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+
+/* ================= H 1 ================= */
+
+h1 {
+    color: #0d4118;
+    font-size: 36px;
+    margin: 220px 0 0 40px;
+    /* top | right | bottom | left */
+    text-align: left;
+    font-family: "Lucida Handwriting";
+}
+
+#home-paragraph {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 40px 0 0 40px;
+    text-align: left;
+    font-family: PapyTimes New Romanrus;
+    line-height: 1.6;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-family: Changa One;
+    z-index: 10;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 12px 18px;
+    background: rgba(51, 51, 51, 0.4);
+    backdrop-filter: blur(8px);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.menu-btn:active {
+    transform: scale(0.95);
+}
+
+.site-title {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-family: Michroma;
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.site-title:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 0;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    transition: width 0.3s ease;
+    z-index: 9;
+}
+
+
+/* OPEN STATE */
+
+.sidebar.active {
+    width: 250px;
+}
+
+.sidebar a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.2s ease;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 30px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 8;
+}
+
+.explore-button {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 400px 0 0 -650px;
+    font-family: Michroma;
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.explore-button:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.main-footer {
+    width: 100%;
+    padding: 40px 0;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    margin-top: 700px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-paragraph {
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.icons-link {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-image {
+    width: 25px;
+    transition: transform 0.3s ease;
+}
+
+.icon-image:hover {
+    transform: scale(1.2);
+}
+
+.pages-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.page-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.page-link:hover {
+    color: #00D4FF;
+}
+
+body.light-theme {
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+body.dark-theme {
+    background-color: #222;
+    color: #f0f0f0;
+}
+
+body.dark-theme .menu-btn {
+    left: auto;
+    right: 15px;
+}
+
+body.dark-theme .sidebar {
+    left: auto;
+    right: 0;
+}
+
+-- * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+#gallery-paragraph {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-size: 20px;
+    font-family: PapyTimes New Romanrus;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.brands-bar {
+    display: flex;
+    margin-top: 150px;
+    gap: 10px;
+    padding: 80px;
+    justify-content: center;
+}
+
+.brand-btn {
+    padding: 8px 16px;
+    border: 1px solid #000000;
+    background: white;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.brand-btn.active,
+.brand-btn:hover {
+    background: black;
+    color: white;
+}
+
+.cars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.car-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: scale(1.03);
+}
+
+.car-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.car-card h3 {
+    margin: 10px 0;
+    padding: 0 10px 10px;
+    font-size: 1.1rem;
+}
+
+.car-card p {
+    font-size: 0.9rem;
+    padding: 0 10px 10px;
+    color: #555;
+}
+
+.btn-details {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 12px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-details:hover {
+    background: #0a0a0f;
+    color: white;
+}
+
+.detail-wrapper {
+    max-width: 900px;
+    margin: 100px auto 60px;
+    padding: 0 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 24px;
+    margin-top: 250px;
+    padding: 8px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.back-btn:hover {
+    background: #333;
+}
+
+.detail-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 28px;
+    display: block;
+}
+
+.detail-name {
+    font-size: 2rem;
+    margin-top: 50px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.detail-price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 28px;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.specs-table caption {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 0;
+    margin-bottom: 8px;
+}
+
+.specs-table thead th {
+    background: #111;
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.specs-table tbody td {
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.specs-table tbody td:first-child {
+    font-weight: bold;
+    width: 35%;
+    color: #000000;
+}
+
+.specs-table tbody tr:hover td {
+    background: #f0f0f0;
+}
+
+.specs-table tfoot td {
+    padding: 10px 16px;
+    font-size: 0.78rem;
+    color: #000000;
+    border-top: 1px solid #ddd;
+    background: #e8e8e8;
+}
+
+
+/* badge جوا الجدول */
+
+.spec-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #000000;
+}

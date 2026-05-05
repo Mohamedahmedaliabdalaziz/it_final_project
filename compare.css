@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    margin: 0;
+}
+
+.textlogo {
+    position: fixed;
+    top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    z-index: 9999;
+}
+
+#backvid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#videoControl {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+#videoControl:hover {
+    background: white;
+    color: black;
+}
+
+.welcometext {
+    position: fixed;
+    top: 45%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+
+#navbar {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 10;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.sideMenu {
+    position: fixed;
+    top: 110px;
+    width: 0;
+    overflow-x: hidden;
+    left: 0;
+    height: calc(100% - 110px);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    color: white;
+    transition: 0.3s;
+    z-index: 9;
+}
+
+.sideMenu a {
+    display: block;
+    margin: 15px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 8px 20px;
+    transition: 0.2s;
+}
+
+.sideMenu a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 30px;
+}
+
+.menubtn {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #cccaca;
+}
+
+button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #cccaca;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.explorebtton {
+    position: fixed;
+    top: 55%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* ===== Background Video ===== */
+
+#backvid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+/* ===== Title ===== */
+
+#comparehead {
+    position: fixed;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    z-index: 9999;
+}
+
+
+/* ===== Text ===== */
+
+#comparetext {
+    position: fixed;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+}
+
+
+/* ===== SELECTS ===== */
+
+#car1,
+#car2 {
+    position: fixed;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-size: 15px;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    appearance: none;
+    transition: 0.3s ease;
+}
+
+
+/* أماكنهم */
+
+#car1 {
+    left: 35%;
+}
+
+#car2 {
+    left: 65%;
+}
+
+
+/* hover */
+
+#car1:hover,
+#car2:hover {
+    border-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%) scale(1.03);
+}
+
+
+/* options */
+
+#car1 option,
+#car2 option {
+    background: #111;
+    color: rgb(255, 255, 255);
+}
+
+
+/* ===== Compare Button ===== */
+
+#compareBtn {
+    position: fixed;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#compareBtn:hover {
+    background: white;
+    color: black;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+
+/* ===== RESULT AREA ===== */
+
+#compareresult {
+    margin-top: 18%;
+    text-align: center;
+    left: 50%;
+    color: rgb(255, 255, 255);
+}
+
+
+/* ===== TABLE ===== */
+
+#comparetable {
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+
+/* header */
+
+#comparetable th {
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* cells */
+
+#comparetable td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* hover rows */
+
+#comparetable tr:hover td {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* feature column */
+
+#comparetable td:first-child {
+    font-weight: bold;
+    color: #ccc;
+}
+
+
+/* ===== CAR IMAGES IN TABLE ===== */
+
+.carimg-table {
+    width: 150px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+.carimg-table:hover {
+    transform: scale(1.05);
+}
+
+
+/* ===== ANIMATION ===== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -70%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}

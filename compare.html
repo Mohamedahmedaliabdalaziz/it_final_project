@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare-Luxury Garage</title>
+    <link rel="stylesheet" href="compare.css">
+
+
+    <body>
+        <h1 class="comparehead" id="comparehead">Compare Cars</h1>
+        <video autoplay muted loop id="backvid">
+            <source src="images/back-groundvideo.mp4" type="video/mp4">
+        </video>
+        <button id="videoControl">Pause Video</button>
+        <!-- زرار المنيو  -->
+        <div id="navbar">
+            <button id="menubtn" class="menubtn" onclick="toggleMenu()">☰ Menu</button>
+            <div class="button" id="auth">
+                <button class="log">
+                <a href="login.html">
+                <img src="images/login.png" alt="Login Icon" class="login-icon" style="width: 20px; height: 20px; vertical-align: middle;">
+                </a>
+            </button>
+            </div>
+        </div>
+        <!-- من هنا بدايه العناصر اللي جوه المنيو  -->
+        <div id="sidemenu" class="sideMenu">
+
+            <a href="index.html">Home</a>
+            <a href="gallary.html">Gallery</a>
+            <a href="compare.html">Compare</a>
+            <a href="TestDrive.html">Test Drive</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="selectors"></div>
+        <!--  1 ديف فيه السلايدات بتاعت المقارنه بين العربيات  -->
+        <div>
+            <p class="comparetext" id="comparetext">Welcome to the car comparison page!</p>
+            <label for="car1"></label>
+            <select id="car1">
+            <option value="1">Ferrari-456M-GT</option>
+            <option value="2">Ferrari-488-GTB</option>
+            <option value="3">Ferrari-Roma</option>
+            <option value="4">Ferrari-Portofino</option>
+            <option value="5">Ford-Taurus</option>
+            <option value="6">Ford-Mustang-GTD</option>
+            <option value="7">BMW M4 Competition</option>
+            <option value="8">BMW X6 M Sport</option>
+            <option value="9">BMW Skytop</option>
+            <option value="10">BMW M760 7-series</option>
+            <option value="11">Mercedes CLE-53 AMG</option>
+            <option value="12">Mercedes Benz EQS</option>
+            <option value="13">Maybach s580</option>
+            <option value="14">Lamborghini Huracan EVO</option>
+            <option value="15">Lamborghini Urus S</option>
+            <option value="16">Porsche 911 GT3 RS </option>
+            <option value="17">Porsche Cayene Turbo </option>
+            <option value="18">Audi S8 L 60 TFSI </option>
+            <option value="19">Audi SQ8 E-Tron</option>
+            <option value="20">Audi A6 E-Tron </option>
+        </select>
+        </div>
+        <!--  2 ديف فيه السلايدات بتاعت المقارنه بين العربيات  -->
+        <div>
+            <label for="car2"></label>
+            <select id="car2">
+            <option value="1">Ferrari-456M-GT</option>
+            <option value="2">Ferrari-488-GTB</option>
+            <option value="3">Ferrari-Roma</option>
+            <option value="4">Ferrari-Portofino</option>
+            <option value="5">Ford-Taurus</option>
+            <option value="6">Ford-Mustang-GTD</option>
+            <option value="7">BMW M4 Competition</option>
+            <option value="8">BMW X6 M Sport</option>
+            <option value="9">BMW Skytop</option>
+            <option value="10">BMW M760 7-series</option>
+            <option value="11">Mercedes CLE-53 AMG</option>
+            <option value="12">Mercedes Benz EQS</option>
+            <option value="13">Maybach s580</option>
+            <option value="14">Lamborghini Huracan EVO</option>
+            <option value="15">Porsche 911 GT3 RS </option>
+            <option value="16">Porsche Cayene Turbo </option>
+            <option value="17">Audi S8 </option>
+            <option value="18">Audi SQ8 E-Tron</option>
+            <option value="19">Audi A6 E-Tron </option>
+        </select>
+        </div>
+        <div id="compareresult">
+            <button id="resetBtn" onclick="resetCompare()" style="display:none;">
+            Compare Again
+        </button>
+        </div>
+        <button id="compareBtn" onclick="compareCars()">Compare</button>
+
+        <script src="compare.js"></script>
+
+    </body>
+
+</html>

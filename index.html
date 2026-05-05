@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sliding Sidebar Menu</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <link id="theme-style" rel="stylesheet" href="home-light.css">
+</head>
+<header>
+
+    <a href="index.html" class="site-title">luxury Garage </a>
+
+    <div id="full-menu">
+        <button class="menu-btn" id="menuBtn">☰ Menu</button>
+
+        <div class="sidebar" id="sidebar">
+            <a href="index.html">Home</a>
+            <a href="gallary.html">Gallery</a>
+            <a href="compare.html">Compare</a>
+            <a href="TestDrive.html">Test Drive</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <button id="theme-toggle" class="theme-btn"><img src="images/brightness-high-fill.svg" alt="theme" class="img-theme"></button>
+
+    <a href="login.html" id="login-page" class="login-page"><img src="images/person-fill-add.svg" alt="login" class="img-login"></a>
+</header>
+
+
+<body>
+
+
+    <h1>"What You See Is What You Drive."</h1>
+
+    <p id="home-paragraph">Skip the guesswork and the endless searching. <br> Our digital showroom is a live reflection of our physical garage, giving you a real-time window into our current lineup. <br> Explore our curated selection of vehicles available right now on the floor—fully
+        inspected <br> and expertly maintained, and ready for your test drive today.</p>
+
+
+    <a href="" class="explore-button"> Explore → </a>
+
+    <style>
+        .explore-button {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 400px 0 0 -650px;
+            font-family: Michroma;
+            font-size: 26px;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .explore-button:hover {
+            transform: translateX(-50%) scale(1.05);
+        }
+    </style>
+
+    <h3>OUT STANDING VEHICLES!</h3>
+
+    <div class="cards-row-one">
+
+        <div class="card">
+            <a href="" target="_self">
+                <img src="images/2024-Mercedes-AMG-CLE53-003-1080.jpg.jpeg" alt="">
+            </a>
+
+            <p class="A">Surpassing expectations from the get-go, the heart of the Mercedes-AMG CLE 53 4MATIC+ Coupé beats with an enhanced 3.0-litre inline 6-cylinder engine, boasting 330 kW and 560 Nm (with overboost 600 Nm for 12 seconds). Complemented by the intelligent
+                AMG Performance 4MATIC+ all-wheel drive with fully adaptable power distribution and agile rear-wheel steering, it delivers a quintessential AMG experience – thrilling from the start and down every winding road..
+            </p>
+
+
+        </div>
+
+        <div class="card">
+            <a href="" target="_self">
+                <img src="images/2004-Porsche-911-GT3-RS-002-1080.jpg.jpeg" alt="">
+            </a>
+            <p>
+                For almost 25 years the 911 GT3 has accepted only the limits of physics – and left the ordinary far behind. Motorsport-tested design and maximum performance ensure it unwaveringly bridges the boundary between the racetrack and the road.
+            </p>
+        </div>
+
+        <div class="card">
+            <a href="" target="_self">
+                <img src="images/2020-Ferrari-Roma-013-1080.jpg.jpeg" alt="">
+            </a>
+            <p>
+                The Ferrari Roma, the new mid-front-engined 2+ coupé of the Prancing Horse, features refined proportions and timeless design combined with unparalleled performance and handling. With its distinctive flair and style, the car is a contemporary representation
+                of the carefree, pleasurable way of life that characterised Rome in the 1950s and ‘60s.
+        </div>
+
+    </div>
+    <div class="cards-row-two">
+
+        <div class="card">
+            <a href="" target="_self">
+                <img src="images/2021-Mercedes-Maybach-S-580-004-1080.jpg.jpeg" alt="">
+            </a>
+
+            <p class="A">Thoughtfully personalized. Exquisitely tailored. Gracefully powerful. The 496-hp, electrically boosted Mercedes-Maybach S 580 4MATIC advances first-class travel to new heights, and by an extraordinarily comfortable lead.
+            </p>
+
+
+        </div>
+
+        <div class="card">
+            <a href="" target="_self">
+                <img src="images/2024-BMW-X6-M-Competition-002-1080.jpg.jpeg" alt="">
+            </a>
+            <p>
+                The BMW X6 M Competition assert its unmistakeable authority with outstanding driving dynamics, expressive M design and unrivalled agility. The new V8 engine including 48-volt technology and perfectly matched drive and chassis technologies, indicate superlative
+                motorsport DNA of BMW M. Together with exterior design updates and the latest-generation iDrive controller, complete with the BMW Curved Display and BMW Operating System 8, the High-Performance Sports Activity Coupé guarantees captivating
+                dynamics, extravagant presence and modern luxury.
+            </p>
+        </div>
+
+        <div class="card">
+            <a href="" target="_self">
+                <img src="images/2021-Audi-A6-E-Tron-Concept-007-1080.jpg.jpeg" alt="">
+            </a>
+            <p>
+                As the second model on the Premium Platform Electric (PPE), the Audi A6 e-tron continues the PPE’s familiar product strengths of performance, range, efficiency, and charging. It is also the platform’s first model with a flat floor concept. The exterior
+                is powerful, sporty, and perfectly proportioned. The interior exemplifies Audi's new design philosophy.
+            </p>
+        </div>
+
+    </div>
+
+    <video id="bg-video" autoplay muted loop>
+    <source src="images/back-groundvideo.mp4" type="video/mp4">
+</video>
+
+    <footer class="main-footer">
+
+        <div class="footer-content">
+
+            <div class="socialMedia-links">
+                <p class="footer-paragraph">Our Social Media</p>
+                <div class="icons-link">
+                    <a href="https://facebook.com" target="_blank"><img class="icon-image" src="images/facebook.svg" alt="Facebook"></a>
+                    <a href="https://instagram.com" target="_blank"><img class="icon-image" src="images/instagram.svg" alt="Instagram"></a>
+                    <a href="https://github.com" target="_blank"><img class="icon-image" src="images/github.svg" alt="GitHub"></a>
+                </div>
+            </div>
+
+
+            <div class="pages-footer">
+                <a href="aboutus.html" class="page-link">About us</a>
+                <a href="contact.html" class="page-link">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .main-footer {
+            width: 100%;
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: 'Michroma', sans-serif;
+            margin-top: 100px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-paragraph {
+            font-size: 14px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        
+        .icons-link {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .icon-image {
+            width: 25px;
+            transition: transform 0.3s ease;
+        }
+        
+        .icon-image:hover {
+            transform: scale(1.2);
+        }
+        
+        .pages-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .page-link {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        
+        .page-link:hover {
+            color: #00D4FF;
+        }
+    </style>
+
+
+    <script src="home.js"></script>
+
+</body>
+
+</html>

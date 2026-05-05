@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" id="theme-style">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Contact Us</h1>
+
+        <!-- MENU -->
+        <div id="full-menu">
+            <button class="menu-btn" id="menuBtn">☰ Menu</button>
+
+            <div class="sidebar" id="sidebar">
+                <a href="index.html">Home</a>
+                <a href="gallary.html">Gallery</a>
+                <a href="compare.html">Compare</a>
+                <a href="testdrive.html">Test Drive</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- LOGIN -->
+        <a href="login.html" id="login-page" class="login-page">
+            <img src="images/login_2.png" alt="login" class="img-login">
+        </a>
+
+        <button id="theme-toggle"><img src="images/brightness-high-fill.svg" alt="theme"></button>
+
+
+
+    </header>
+
+    <main>
+
+        <p>Welcome to our website</p>
+
+        <p>
+            We are here to help you with any questions or inquiries. Feel free to contact us anytime, and we will get back to you as soon as possible.
+            <br> Your satisfaction is our priority.
+        </p>
+
+        <section>
+
+            <h2>Contact Information</h2>
+
+            <ul>
+                <li>Email: zz9319654@gmail.com</li>
+                <li><a href="mailto:zz9319654@gmail.com">Send Email</a></li>
+                <li>Phone: 33062828</li>
+                <li><a href="https://wa.me/33062828">Chat on WhatsApp</a></li>
+                <li>Location: Helwan</li>
+            </ul>
+
+            <!-- FORM -->
+            <form class="x" id="contactForm">
+                <input type="text" id="name" placeholder="your name please">
+                <input type="email" id="email" placeholder="your email please">
+                <p>if you have any problem write there</p>
+                <textarea id="message" placeholder="Your Message"></textarea>
+                <button class="send-button" type="submit">Send</button>
+            </form>
+
+            <script src="contact2.js"></script>
+
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+
+        <div class="footer-content">
+
+            <div class="socialMedia-links">
+                <p class="footer-paragraph">Our Social Media</p>
+                <div class="icons-link">
+                    <a href="https://facebook.com" target="_blank"><img class="icon-image" src="images/facebook.svg" alt="Facebook"></a>
+                    <a href="https://instagram.com" target="_blank"><img class="icon-image" src="images/instagram.svg" alt="Instagram"></a>
+                    <a href="https://github.com" target="_blank"><img class="icon-image" src="images/github.svg" alt="GitHub"></a>
+                </div>
+            </div>
+
+
+            <div class="pages-footer">
+                <a href="" class="page-link">About us</a>
+                <a href="contact.html" class="page-link">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .main-footer {
+            width: 100%;
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: 'Michroma', sans-serif;
+            margin-top: 100px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-paragraph {
+            font-size: 14px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        
+        .icons-link {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .icon-image {
+            width: 25px;
+            transition: transform 0.3s ease;
+        }
+        
+        .icon-image:hover {
+            transform: scale(1.2);
+        }
+        
+        .pages-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .page-link {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        
+        .page-link:hover {
+            color: #00D4FF;
+        }
+    </style>
+    <script src="contact.js"></script>
+
+</body>
+
+</html>

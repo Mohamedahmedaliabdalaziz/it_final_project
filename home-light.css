@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-family: Changa One;
+    z-index: 10;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 12px 18px;
+    background: rgba(51, 51, 51, 0.4);
+    backdrop-filter: blur(8px);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.menu-btn:active {
+    transform: scale(0.95);
+}
+
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 0;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    transition: width 0.3s ease;
+    z-index: 9;
+    border-radius: 20px;
+}
+
+.sidebar.active {
+    width: 250px;
+}
+
+.sidebar a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 30px;
+}
+
+.site-title {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-family: Michroma;
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.site-title:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
+.theme-btn {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    color: white;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.login-page {
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    width: 70px;
+    height: 70px;
+    color: white;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.img-login {
+    width: 65px;
+}
+
+.img-theme {
+    width: 55px;
+}
+
+h1 {
+    color: #d09620;
+    font-size: 36px;
+    margin: 220px 0 0 40px;
+    text-align: left;
+    font-family: "Lucida Handwriting";
+}
+
+#home-paragraph {
+    color: #467ae3;
+    font-size: 20px;
+    margin: 40px 0 0 40px;
+    text-align: left;
+    font-family: PapyTimes New Romanrus;
+    line-height: 1.6;
+}
+
+h3 {
+    position: absolute;
+    margin: 200px auto 0 375px;
+    color: #fff;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.cards-row-one {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 300px auto 0 auto;
+    max-width: 1200px;
+}
+
+.cards-row-two {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 100px auto 0 auto;
+    max-width: 1200px;
+}
+
+.card {
+    min-width: 280px;
+    max-width: 350px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #fff;
+    font-size: medium;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}

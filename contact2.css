@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* Changed to a dark deep-sea grey */
+    background: #0d1117;
+    color: #e6edf3;
+}
+
+header {
+    background: linear-gradient(90deg, #000000, #161b22);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px 15px;
+    /* Darker button background */
+    background: rgba(33, 38, 45, 0.8);
+    color: white;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+}
+
+.menu-btn:hover {
+    background: #ff7b00;
+    border-color: #ff7b00;
+}
+
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 0;
+    height: 100%;
+    /* Deeper dark for sidebar overlay */
+    background: rgba(1, 4, 9, 0.95);
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.sidebar.active {
+    width: 230px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: #c9d1d9;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background: #ff7b00;
+    color: white;
+    padding-left: 25px;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 5px;
+    right: 90px;
+    width: 70px;
+    height: 70px;
+    color: white;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    /* Dark card background */
+    background: #161b22;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #30363d;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    /* Light grey for readability */
+    color: #8b949e;
+}
+
+h1,
+h2 {
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border-radius: 8px;
+    /* Dark input fields */
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: white;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #58a6ff;
+    outline: none;
+}
+
+.send-button {
+    padding: 12px;
+    background: #238636;
+    /* Green often looks better for 'send' in dark themes, but kept blue logic if preferred */
+    background: #1f6feb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background: #ff7b00;
+}
+
+.main-footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #010409;
+    color: #8b949e;
+    text-align: center;
+    border-top: 1px solid #30363d;
+}
+
+a {
+    color: #58a6ff;
+}
+
+a:hover {
+    color: #ff7b00;
+}
+
+.login-page {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: #21262d;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-page:hover {
+    background: #ff7b00;
+    border-color: #ff7b00;
+}

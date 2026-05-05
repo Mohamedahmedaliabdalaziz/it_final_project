@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallary-light.css" href="gallary-dark.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html" class="site-title">luxury Garage </a>
+
+        <div id="full-menu">
+            <button class="menu-btn" id="menuBtn">☰ Menu</button>
+
+            <div class="sidebar" id="sidebar">
+                <a href="index.html">Home</a>
+                <a href="gallary.html">Gallery</a>
+                <a href="compare.html">Compare</a>
+                <a href="testdrive.html">Test Drive</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+
+        <button id="theme-toggle" class="theme-btn"><img src="images/brightness-high-fill.svg" alt="theme" class="img-theme"></button>
+
+        <a href="login.html" id="login-page" class="login-page"><img src="images/person-fill-add.svg" alt="login" class="img-login"></a>
+    </header>
+
+
+    <main>
+
+
+        <P id="gallery-paragraph">Browse our car collection and find the perfect vehicle for you. </P>
+
+        <div class="brands-bar">
+            <button id="btn-ALL" class="brand-btn active" onclick="filterBrand('ALL')">All</button>
+            <button id="btn-BMW" class="brand-btn" onclick="filterBrand('BMW')" style="color: #0066CC; font-weight: bold;">BMW</button>
+            <button id="btn-Porsche" class="brand-btn" onclick="filterBrand('PORSCHE')" style="color: #8C1C13; font-weight: bold;">POR</button>
+            <button id="btn-Mercedes" class="brand-btn" onclick="filterBrand('MERCEDES')" style="color: #464343; font-weight: bold;">MS</button>
+            <button id="btn-Ferrari" class="brand-btn" onclick="filterBrand('FERRARI')" style="color: #CC0000; font-weight: bold;">FER</button>
+            <button id="btn-Audi" class="brand-btn" onclick="filterBrand('AUDI')" style="color: #333333; font-weight: bold;">AUDI</button>
+            <button id="btn-Lamborghini" class="brand-btn" onclick="filterBrand('LAMBORGHINI')" style="color: #CC9900; font-weight: bold;">LAM</button>
+            <button id="btn-Ford" class="brand-btn" onclick="filterBrand('FORD')" style="color: #003478; font-weight: bold;">FORD</button>
+        </div>
+
+
+        <div id="carsGrid" class="cars-grid"></div>
+
+
+
+    </main>
+
+
+
+    <footer class="main-footer">
+
+        <div class="footer-content">
+
+            <div class="socialMedia-links">
+                <p class="footer-paragraph">Our Social Media</p>
+                <div class="icons-link">
+                    <a href="https://facebook.com" target="_blank"><img class="icon-image" src="images/facebook.svg" alt="Facebook"></a>
+                    <a href="https://instagram.com" target="_blank"><img class="icon-image" src="images/instagram.svg" alt="Instagram"></a>
+                    <a href="https://github.com" target="_blank"><img class="icon-image" src="images/github.svg" alt="GitHub"></a>
+                </div>
+            </div>
+
+
+            <div class="pages-footer">
+                <a href="" class="page-link">About us</a>
+                <a href="contact.html" class="page-link">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .main-footer {
+            width: 100%;
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: 'Michroma', sans-serif;
+            margin-top: 100px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-paragraph {
+            font-size: 14px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        
+        .icons-link {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .icon-image {
+            width: 25px;
+            transition: transform 0.3s ease;
+        }
+        
+        .icon-image:hover {
+            transform: scale(1.2);
+        }
+        
+        .pages-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .page-link {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        
+        .page-link:hover {
+            color: #00D4FF;
+        }
+    </style>
+
+
+
+
+    <script src="gallary.js"></script>
+</body>
+
+</html>
