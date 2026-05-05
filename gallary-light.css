@@ -607,7 +607,7 @@ body {
 }
 
 
-/* badge جوا الجدول */
+
 
 .spec-badge {
     display: inline-block;
@@ -616,4 +616,17 @@ body {
     font-size: 0.75rem;
     font-weight: bold;
     color: #000000;
+}
+
+
+.container {
+    width: 80%;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        font-size: 14px;
+    }
 }
