@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
     function setTheme(theme) {
         if (theme === "dark") {
             themeLink.href = "testdrive.css";
-            icon.src = "images/moon-fill.svg";
+            icon.src = "moon-fill.svg";
         } else {
             themeLink.href = "testdrive2.css";
-            icon.src = "images/brightness-high-fill.svg";
+            icon.src = "brightness-high-fill.svg";
         }
     }
 
