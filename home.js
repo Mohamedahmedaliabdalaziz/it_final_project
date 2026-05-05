@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (savedTheme === "dark") {
         themeLink.href = "home-dark.css";
-        icon.src = "images/moon-fill.svg";
+        icon.src = "moon-fill.svg";
     } else {
         themeLink.href = "home-light.css";
-        icon.src = "images/brightness-high-fill.svg";
+        icon.src = "brightness-high-fill.svg";
     }
 
 
@@ -36,11 +36,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (isCurrentlyLight) {
             themeLink.href = "home-dark.css";
-            icon.src = "images/moon-fill.svg";
+            icon.src = "moon-fill.svg";
             localStorage.setItem("theme", "dark");
         } else {
             themeLink.href = "home-light.css";
-            icon.src = "images/brightness-high-fill.svg";
+            icon.src = "brightness-high-fill.svg";
             localStorage.setItem("theme", "light");
         }
     });
