@@ -19,7 +19,7 @@ function switchTab(tab) {
         tabs[0].classList.remove('active');
         regPanel.classList.add('active');
         loginPanel.classList.remove('active');
-        switchText.innerHTML = 'Do you have acount? <a href="#" onclick="switchTab(\'login\'); return false;">sign up now!</a>';
+        switchText.innerHTML = 'Do you have acount? <a href="#" onclick="switchTab(\'login\'); return false;">Log in now!</a>';
     }
 }
 
