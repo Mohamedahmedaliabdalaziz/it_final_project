@@ -37,11 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const applyTheme = (theme) => {
             if (theme === "dark") {
                 themeLink.href = "aboutus2.css";
-                icon.src = "images/moon-fill.svg";
+                icon.src = "moon-fill.svg";
                 localStorage.setItem("theme", "dark");
             } else {
                 themeLink.href = "aboutus.css";
-                icon.src = "images/brightness-high-fill.svg";
+                icon.src = "brightness-high-fill.svg";
                 localStorage.setItem("theme", "light");
             }
         };
