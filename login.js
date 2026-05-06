@@ -13,13 +13,13 @@ function switchTab(tab) {
         tabs[1].classList.remove('active');
         loginPanel.classList.add('active');
         regPanel.classList.remove('active');
-        switchText.innerHTML = 'مش عندك حساب؟ <a href="#" onclick="switchTab(\'register\'); return false;">سجّل دلوقتي</a>';
+        switchText.innerHTML = 'Donot have acount? <a href="#" onclick="switchTab(\'register\'); return false;">Sign up now!</a>';
     } else {
         tabs[1].classList.add('active');
         tabs[0].classList.remove('active');
         regPanel.classList.add('active');
         loginPanel.classList.remove('active');
-        switchText.innerHTML = 'عندك حساب؟ <a href="#" onclick="switchTab(\'login\'); return false;">سجّل دخولك</a>';
+        switchText.innerHTML = 'Do you have acount? <a href="#" onclick="switchTab(\'login\'); return false;">sign up now!</a>';
     }
 }
 
