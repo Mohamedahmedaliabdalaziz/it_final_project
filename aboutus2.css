@@ -240,14 +240,4 @@ body {
 .page-link:hover {
     color: #00D4FF;
 }
-.container {
-    width: 80%;
-    font-size: 18px;
-}
 
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-        font-size: 14px;
-    }
-}
