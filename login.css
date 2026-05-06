@@ -593,16 +593,3 @@ body {
     display: block;
 }
 
-
-/* Responsive */
-
-@media (max-width: 900px) {
-    .left-panel {
-        display: none;
-    }
-    .right-panel {
-        width: 100%;
-        min-width: unset;
-        padding: 48px 28px;
-    }
-}
